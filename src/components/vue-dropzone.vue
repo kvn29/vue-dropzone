@@ -134,8 +134,8 @@ export default {
 
     this.dropzone.on("removedfile", function(file) {
       vm.$emit("vdropzone-removed-file", file);
-      if (file.manuallyAdded && vm.dropzone.options.maxFiles !== null)
-        vm.dropzone.options.maxFiles++;
+      //if (file.manuallyAdded && vm.dropzone.options.maxFiles !== null)
+        // vm.dropzone.options.maxFiles++;
     });
 
     this.dropzone.on("success", function(file, response) {
@@ -303,7 +303,6 @@ export default {
         }
       }
       this.dropzone.emit("complete", file);
-      if (this.dropzone.options.maxFiles) this.dropzone.options.maxFiles--;
       this.dropzone.files.push(file);
       this.$emit("vdropzone-file-added-manually", file);
     },
