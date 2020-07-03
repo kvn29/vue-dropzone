@@ -389,6 +389,10 @@ export default {
     getActiveFiles: function() {
       return this.dropzone.getActiveFiles();
     },
+    transformFile: function() {
+      console.log('ici');
+      return this.dropzone.transformFile();
+    },
     getSignedAndUploadToS3(file) {
       var promise = awsEndpoint.sendFile(
         file,
