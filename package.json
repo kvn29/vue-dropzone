@@ -9,7 +9,7 @@
   "version": "3.6.0",
   "license": "MIT",
   "main": "./dist/vue2Dropzone.js",
-  "repository": "git@github.com:rowanwins/vue-dropzone.git",
+  "repository": "git@github.com:kvn29/vue-dropzone.git",
   "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
