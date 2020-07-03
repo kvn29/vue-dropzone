@@ -91,9 +91,9 @@ export default {
 
     this.dropzone = new Dropzone(
       this.$refs.dropzoneElement,
-      {...this.dropzoneSettings, transformFile: function(file, done) {
+      {...this.dropzoneSettings, transformFile: function transformFile(file, done) {
         console.log('ici ?')
-        done();
+        done(file);
       }}
     );
     let vm = this;
