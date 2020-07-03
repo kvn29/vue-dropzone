@@ -83,6 +83,7 @@ export default {
     }
   },
   mounted() {
+    console.log('-- fork jdfr2k20 dropzone -- ');
     if (this.$isServer && this.hasBeenMounted) {
       return;
     }
